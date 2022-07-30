@@ -474,6 +474,8 @@ GameObject:
   - component: {fileID: 1083273659}
   - component: {fileID: 1083273661}
   - component: {fileID: 1083273662}
+  - component: {fileID: 1083273664}
+  - component: {fileID: 1083273663}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -585,6 +587,43 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.06
+--- !u!114 &1083273663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083273658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6404764ebfa101545a2c3006665ba0c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 1083273661}
+  inputController: {fileID: 1083273664}
+  canJump: 0
+  jumpForce: 5
+--- !u!114 &1083273664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083273658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d635e900fb4844fb7f03f961e4aaf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <PressInputAction>k__BackingField:
+    m_Name: Press Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: bc26b35a-8b07-4ad2-9436-151ddc078b69
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!1 &2042066662
 GameObject:
   m_ObjectHideFlags: 0
