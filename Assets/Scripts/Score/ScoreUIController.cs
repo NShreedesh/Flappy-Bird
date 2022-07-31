@@ -9,7 +9,7 @@ namespace Score
         [Header("Number Sprites")]
         [SerializeField]
         private Sprite[] numberSprites;
-
+        
         [Header("Score Images")]
         [SerializeField]
         private Image image1;
@@ -17,39 +17,31 @@ namespace Score
         private Image image2;
         [SerializeField]
         private Image image3;
-
-        private void OnEnable()
-        {
-            ScoreController.OnScoreAdded += OnScoreChange;
-        }
         
-        private void OnDisable()
+        public void ChangeImageAccordingToScore(int score)
         {
-            ScoreController.OnScoreAdded -= OnScoreChange;
-        }
-        
-        private void OnScoreChange(int score)
-        {
-            ChangeImageAccordingToScore(score);
-        }
-
-        private void ChangeImageAccordingToScore(int score)
-        {
+            var scoreToString = score.ToString();
+            
             switch (score)
             {
                 case > 0 and < 10:
-                    image3.sprite = numberSprites[score];
+                    ChangeImage(image3, Convert.ToInt32(scoreToString[0].ToString()));
                     break;
                 case >= 10 and < 100:
-                    image2.sprite = numberSprites[Convert.ToInt32(score.ToString()[0].ToString())];
-                    image3.sprite = numberSprites[Convert.ToInt32(score.ToString()[1].ToString())];
+                    ChangeImage(image2, Convert.ToInt32(scoreToString[0].ToString()));
+                    ChangeImage(image3, Convert.ToInt32(scoreToString[1].ToString()));
                     break;
                 case >= 100 and < 1000:
-                    image1.sprite = numberSprites[Convert.ToInt32(score.ToString()[0].ToString())];
-                    image2.sprite = numberSprites[Convert.ToInt32(score.ToString()[1].ToString())];
-                    image3.sprite = numberSprites[Convert.ToInt32(score.ToString()[2].ToString())];
+                    ChangeImage(image1, Convert.ToInt32(scoreToString[0].ToString()));
+                    ChangeImage(image2, Convert.ToInt32(scoreToString[1].ToString()));
+                    ChangeImage(image3, Convert.ToInt32(scoreToString[2].ToString()));
                     break;
             }
+        }
+
+        private void ChangeImage(Image image, int score)
+        {
+            image.sprite = numberSprites[score];
         }
     }
 }

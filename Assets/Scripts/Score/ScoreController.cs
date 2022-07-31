@@ -12,6 +12,19 @@ namespace Score
 
         [Header("Actions")]
         public static Action<int> OnScoreAdded;
+        public static Action<int> OnHighScoreAdded;
+
+        private void OnEnable()
+        {
+            GameManager.OnPlayerDead += SaveHighScore;
+            GameManager.OnPlayerDead += InvokeAddScore;
+        }
+
+        private void OnDisable()
+        {
+            GameManager.OnPlayerDead -= SaveHighScore;
+            GameManager.OnPlayerDead -= InvokeAddScore;
+        }
 
         private void OnTriggerExit2D(Collider2D col)
         {
@@ -26,7 +39,24 @@ namespace Score
         private void AddScore()
         {
             score += 1;
+            InvokeAddScore();
+        }
+
+        private void InvokeAddScore()
+        {
             OnScoreAdded?.Invoke(score);
+        }
+
+        private void SaveHighScore()
+        {
+            if (PlayerPrefs.HasKey(TagManager.HighScore))
+            {
+                var highScore = PlayerPrefs.GetInt(TagManager.HighScore);
+                OnHighScoreAdded?.Invoke(highScore);
+                if (highScore >= score) return;
+            }
+            PlayerPrefs.SetInt(TagManager.HighScore, score);
+            OnHighScoreAdded?.Invoke(score);
         }
     }
 }
