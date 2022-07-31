@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Manager
@@ -22,6 +23,9 @@ namespace Manager
         [field:SerializeField]
         public bool IsPlayerDead { get; private set; }
 
+        [Header("Actions")]
+        public static Action OnPlayerDead;
+
         private void Awake()
         {
             _instance = this;
@@ -30,17 +34,12 @@ namespace Manager
         public void PlayerDead()
         {
             IsPlayerDead = true;
-            Invoke(nameof(ResetGame), 2f);
+            OnPlayerDead?.Invoke();
         }
 
-        public void ResetGame()
+        public static void ResetGame()
         {
             SceneManager.LoadScene(0);
-        }
-
-        private void OnDisable()
-        {
-            CancelInvoke();
         }
     }
 }
