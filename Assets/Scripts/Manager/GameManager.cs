@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Manager
 {
@@ -26,9 +27,20 @@ namespace Manager
             _instance = this;
         }
 
-        public void SetPlayerDead()
+        public void PlayerDead()
         {
             IsPlayerDead = true;
+            Invoke(nameof(ResetGame), 2f);
+        }
+
+        public void ResetGame()
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        private void OnDisable()
+        {
+            CancelInvoke();
         }
     }
 }

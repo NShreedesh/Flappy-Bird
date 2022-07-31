@@ -16,7 +16,7 @@ namespace Player
 
         private static void Die()
         {
-            GameManager.Instance.SetPlayerDead();
+            GameManager.Instance.PlayerDead();
         }
     }
 }
