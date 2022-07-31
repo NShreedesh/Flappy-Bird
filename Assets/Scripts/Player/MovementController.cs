@@ -38,7 +38,11 @@ namespace Player
 
         private void Update()
         {
-            if(GameManager.Instance.IsPlayerDead) return;
+            if (GameManager.Instance.IsPlayerDead)
+            {
+                StopAnimation();
+                return;
+            }
             
             if (inputController.PressInputAction.triggered)
             {
@@ -78,6 +82,11 @@ namespace Player
                     animator.SetBool(_canFly, false);
                     break;
             }
+        }
+
+        private void StopAnimation()
+        {
+            animator.SetBool(_canFly, false);
         }
 
         private void RotateBird()
