@@ -26,15 +26,9 @@ namespace Manager
             _instance = this;
         }
 
-
         public void SetPlayerDead()
         {
             IsPlayerDead = true;
-        }
-
-        public void ResetGame()
-        {
-            IsPlayerDead = false;
         }
     }
 }

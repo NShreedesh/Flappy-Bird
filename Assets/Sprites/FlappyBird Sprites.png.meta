@@ -305,48 +305,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: black
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 290
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d3ea26648a4335499a47638a0f96b0c
-      internalID: -865693682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: white
-      rect:
-        serializedVersion: 2
-        x: 292
-        y: 272
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b52f27d76b508724289d4c0f5beeaddc
-      internalID: 1595691422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: scoreboard
       rect:
         serializedVersion: 2
@@ -536,90 +494,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlappyBird Sprites_68
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 78
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de83114c678c4784f8553c231f3af4e9
-      internalID: -998128067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlappyBird Sprites_69
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 69
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34472fa49ea00c14bb840790abed785d
-      internalID: 339634323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlappyBird Sprites_71
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 39
-        width: 8
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 211e8ed7e67b58b4592e18de282ab4a0
-      internalID: -727085393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FlappyBird Sprites_73
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 25
-        width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a0442d2b2c3bb64c9d684992e39064c
-      internalID: 882376830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bird3_1
       rect:
         serializedVersion: 2
@@ -704,13 +578,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlappyBird Sprites_78
+      name: FlappyBird Sprites_3
       rect:
         serializedVersion: 2
-        x: 137
-        y: 13
-        width: 7
-        height: 10
+        x: 292
+        y: 310
+        width: 12
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -718,20 +592,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6265e5cb40685c642a6f7be9fb52dfe6
-      internalID: -380726017
+      spriteID: 0ea0724276a8c7d4fb38817b1298502d
+      internalID: -1694879800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlappyBird Sprites_80
+      name: 0
       rect:
         serializedVersion: 2
-        x: 131
-        y: 1
-        width: 7
-        height: 10
+        x: 138
+        y: 182
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -739,8 +613,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69eb5bf704dc515458eb5903e0357259
-      internalID: -1992071063
+      spriteID: 7ba94fbd29dbb114389cbb29a9b856b9
+      internalID: 1889012060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 173
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a502f706e82c5242bad1ce3cc6df6e2
+      internalID: -727085393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 156
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109deb266060cdc45b91a9baadebfc4b
+      internalID: 910380426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 147
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58486bf9bfb5b64483f5833c53e7b06
+      internalID: 1882525642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 130
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053b2fb8c4d2a5045969d4fa6dd9fd0d
+      internalID: 201544355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 121
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180ddc702b655194d82961a57bf2e8a9
+      internalID: -1558662411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 104
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196880e2c2f264747a67d2438ecd958b
+      internalID: -1559287476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca8d59959251884a98a7a1b4b32d7e3
+      internalID: -2070436904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 78
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f35ab6141bcb84dbe8dfa7bb55a209
+      internalID: 2006263338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 69
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff56fd2d3c352644b21251194f3b3b2
+      internalID: -736219526
       vertices: []
       indices: 
       edges: []
@@ -758,85 +821,90 @@ TextureImporter:
     nameFileIdTable:
       FlappyBird Sprites_80: -1992071063
       menu: 1904332077
-      FlappyBird Sprites_39: 1949340992
       0: 1889012060
-      white: 1595691422
-      scoreboard: 26352538
       FlappyBird Sprites_13: 1249551226
       bird3_1: 370227038
       FlappyBird Sprites_22: 306673603
-      get ready: 1693437838
       FlappyBird Sprites_62: 77630400
-      FlappyBird Sprites_17: -672663208
       FlappyBird Sprites_27: -1005685712
-      FlappyBird Sprites_45: -230125118
+      6: -1559287476
       FlappyBird Sprites_61: 1611476030
-      silver coin: 2021198452
-      FlappyBird Sprites_5: 2006263338
-      FlappyBird Sprites_68: -998128067
-      game over: 1341766613
+      5: -1558662411
       FlappyBird Sprites_40: 25312903
-      gold coin: 750983521
       bird2_1: -1572334489
       FlappyBird Sprites_59: -2040501832
       FlappyBird Sprites_36: 1345978826
-      FlappyBird Sprites_26: -1842223533
-      FlappyBird Sprites_33: -674136277
       ground: 327302310
       FlappyBird Sprites_35: -781130216
-      leaderboard: -1445666205
       FlappyBird Sprites_29: -527776334
-      FlappyBird Sprites_63: -2067265464
-      play: 1955777218
-      FlappyBird Sprites_0: 910380426
-      FlappyBird Sprites_16: 708963430
-      pipe2: 581751788
       FlappyBird Sprites_79: -1063188185
       bird1_1: 215550612
-      FlappyBird Sprites_66: 234625031
-      FlappyBird Sprites_3: -1694879800
       background 2: 754203973
-      FlappyBird Sprites_58: -1358206954
       FlappyBird Sprites_14: 220915765
       FlappyBird Sprites_7: 889679166
-      pipe1: -1983309714
-      FlappyBird Sprites_56: 1136736679
-      FlappyBird Sprites_23: 1498212471
-      bird3_3: 607511246
       FlappyBird Sprites_21: 654602650
-      FlappyBird Sprites_38: 1944218676
       FlappyBird Sprites_43: -1868060998
-      FlappyBird Sprites_65: 380979896
       FlappyBird Sprites_78: -380726017
       background 1: -887816683
-      FlappyBird Sprites_10: -1502221212
+      9: -736219526
       FlappyBird Sprites_28: 359065321
       FlappyBird Sprites_37: -1329989521
-      FlappyBird Sprites_32: 2131926108
-      FlappyBird Sprites_41: 1452435231
-      FlappyBird Sprites_25: 589760597
       pause: -87996005
+      4: 201544355
       FlappyBird Sprites_19: 679313211
       bird3_2: -1493882850
-      black: -865693682
       bird2_3: 222617849
-      FlappyBird Sprites_9: 466627471
+      bird1_2: 1350293158
       FlappyBird Sprites_18: -255149543
-      FlappyBird Sprites_15: -1831721839
       FlappyBird Sprites_34: -1690510212
-      ok: -1672156049
       FlappyBird Sprites_70: 696024577
       FlappyBird Sprites_24: 495703595
       bird1_3: 249366913
-      FlappyBird Sprites_69: 339634323
       FlappyBird Sprites_20: 8651170
-      FlappyBird Sprites_73: 882376830
       FlappyBird Sprites_72: -543845695
       bird2_2: 1660163825
-      FlappyBird Sprites_4: -2070436904
+      3: 1882525642
+      FlappyBird Sprites_39: 1949340992
+      white: 1595691422
+      scoreboard: 26352538
+      get ready: 1693437838
+      FlappyBird Sprites_17: -672663208
+      FlappyBird Sprites_45: -230125118
+      silver coin: 2021198452
+      FlappyBird Sprites_68: -998128067
+      game over: 1341766613
+      pipe2: 581751788
+      gold coin: 750983521
+      FlappyBird Sprites_26: -1842223533
+      FlappyBird Sprites_33: -674136277
+      leaderboard: -1445666205
+      FlappyBird Sprites_63: -2067265464
+      play: 1955777218
+      FlappyBird Sprites_16: 708963430
+      FlappyBird Sprites_66: 234625031
+      FlappyBird Sprites_3: -1694879800
+      FlappyBird Sprites_58: -1358206954
+      8: 2006263338
+      FlappyBird Sprites_56: 1136736679
+      pipe1: -1983309714
+      FlappyBird Sprites_23: 1498212471
+      bird3_3: 607511246
+      FlappyBird Sprites_65: 380979896
+      FlappyBird Sprites_38: 1944218676
+      2: 910380426
+      FlappyBird Sprites_10: -1502221212
+      FlappyBird Sprites_32: 2131926108
+      FlappyBird Sprites_41: 1452435231
+      FlappyBird Sprites_25: 589760597
+      black: -865693682
+      FlappyBird Sprites_9: 466627471
+      FlappyBird Sprites_15: -1831721839
+      ok: -1672156049
+      1: -727085393
+      7: -2070436904
+      FlappyBird Sprites_69: 339634323
       pipe4: -1468048270
-      bird1_2: 1350293158
-      FlappyBird Sprites_71: -727085393
+      FlappyBird Sprites_73: 882376830
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
