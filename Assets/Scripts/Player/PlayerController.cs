@@ -1,3 +1,4 @@
+using Manager;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -5,6 +6,10 @@ namespace Player
 {
     public class PlayerController : MonoBehaviour
     {
+        [Header("Managers")]
+        [SerializeField]
+        private GameManager gameManager;
+        
         [Header("Bird Components")]
         [SerializeField]
         private new Rigidbody2D rigidbody;
@@ -37,6 +42,8 @@ namespace Player
 
         private void Update()
         {
+            if(gameManager.IsPlayerDead) return;
+            
             if (inputController.PressInputAction.triggered)
             {
                 _canJump = true;
@@ -47,6 +54,8 @@ namespace Player
         
         private void FixedUpdate()
         {
+            if(gameManager.IsPlayerDead) return;
+            
             Jump();
             RotateBird();
         }
@@ -77,7 +86,7 @@ namespace Player
 
         private void RotateBird()
         {
-            var targetRotation = rigidbody.velocity.y >= -2f ? new Vector3(0, 0, -30) : new Vector3(0, 0, 30);
+            var targetRotation = rigidbody.velocity.y >= -4f ? new Vector3(0, 0, 20) : new Vector3(0, 0, -20);
             var rotate = Quaternion.Slerp(transform.rotation, quaternion.Euler(targetRotation), Time.fixedDeltaTime * rotationSpeed);
             rigidbody.SetRotation(rotate);
         }
