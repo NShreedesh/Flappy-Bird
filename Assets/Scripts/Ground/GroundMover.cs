@@ -1,3 +1,4 @@
+using Manager;
 using UnityEngine;
 
 namespace Ground
@@ -18,6 +19,8 @@ namespace Ground
 
         private void Update()
         {
+            if (GameManager.Instance.IsPlayerDead) return;
+            
             foreach (var ground in grounds)
             {
                 ground.transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0, 0));
