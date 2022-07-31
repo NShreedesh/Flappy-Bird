@@ -1,3 +1,4 @@
+using Manager;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -25,6 +26,8 @@ namespace Obstacles
 
         private void Spawn()
         {
+            if(GameManager.Instance.IsPlayerDead) return;
+            
             var obstacle = Instantiate(obstacles[0], transform.position, quaternion.identity, transform);
             obstacle.SetRandomPosition();
         }

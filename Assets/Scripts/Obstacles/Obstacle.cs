@@ -1,4 +1,5 @@
 using System;
+using Manager;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -16,14 +17,31 @@ namespace Obstacles
         [SerializeField]
         private float maxYPosition = 2;
 
+        [SerializeField]
+        private float destroyXPosition = -5f;
+
         private void OnEnable()
         {
-            Destroy(gameObject, 6);
+            InvokeRepeating(nameof(DestroyObstacle), 5, 1);
+        }
+
+        private void OnDisable()
+        {
+            CancelInvoke();
         }
 
         private void Update()
         {
+            if(GameManager.Instance.IsPlayerDead) return;
             transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
+        }
+
+        private void DestroyObstacle()
+        {
+            if (transform.position.x < destroyXPosition)
+            {
+                Destroy(gameObject);
+            }
         }
 
         public void SetRandomPosition()

@@ -196,7 +196,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 327302310, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -307,7 +307,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 327302310, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -525,7 +525,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 215550612, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -601,11 +601,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6404764ebfa101545a2c3006665ba0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1724781085}
   rigidbody: {fileID: 1083273661}
   animator: {fileID: 1083273665}
   inputController: {fileID: 1083273664}
-  jumpForce: 8
+  jumpForce: 7
   rotationSpeed: 10
 --- !u!114 &1083273664
 MonoBehaviour:
@@ -651,7 +650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3d857f26aec9d49818d83bfeb8a1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1724781085}
 --- !u!1 &1407480317
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17719b8e711f46db82889ba001e321df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <IsPlayerDead>k__BackingField: 0
 --- !u!1 &2042066662
 GameObject:
   m_ObjectHideFlags: 0

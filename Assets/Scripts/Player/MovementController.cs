@@ -6,10 +6,6 @@ namespace Player
 {
     public class MovementController : MonoBehaviour
     {
-        [Header("Managers")]
-        [SerializeField]
-        private GameManager gameManager;
-        
         [Header("Bird Components")]
         [SerializeField]
         private new Rigidbody2D rigidbody;
@@ -42,7 +38,7 @@ namespace Player
 
         private void Update()
         {
-            if(gameManager.IsPlayerDead) return;
+            if(GameManager.Instance.IsPlayerDead) return;
             
             if (inputController.PressInputAction.triggered)
             {
@@ -54,7 +50,7 @@ namespace Player
         
         private void FixedUpdate()
         {
-            if(gameManager.IsPlayerDead) return;
+            if(GameManager.Instance.IsPlayerDead) return;
             
             Jump();
             RotateBird();
