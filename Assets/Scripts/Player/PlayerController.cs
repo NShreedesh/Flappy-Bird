@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Player
@@ -16,15 +17,18 @@ namespace Player
 
         [Header("Jump Values")]
         [SerializeField]
-        private bool canJump;
-        [SerializeField]
         private float jumpForce = 5f;
+        private bool _canJump;
 
         [Header("Animator Tags")]
         private const string CanFly = "canFly";
 
         [Header("Animator Tags Hash")]
         private int _canFly;
+
+        [Header("Rotation Values")]
+        [SerializeField]
+        private float rotationSpeed = 5;
 
         private void Start()
         {
@@ -35,7 +39,7 @@ namespace Player
         {
             if (inputController.PressInputAction.triggered)
             {
-                canJump = true;
+                _canJump = true;
             }
             
             PlayAnimation();
@@ -44,15 +48,16 @@ namespace Player
         private void FixedUpdate()
         {
             Jump();
+            RotateBird();
         }
 
         private void Jump()
         {
-            if (!canJump) return;
+            if (!_canJump) return;
             
             rigidbody.velocity = Vector2.zero;
             rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            canJump = false;
+            _canJump = false;
         }
 
         private void PlayAnimation()
@@ -68,6 +73,13 @@ namespace Player
                     animator.SetBool(_canFly, false);
                     break;
             }
+        }
+
+        private void RotateBird()
+        {
+            var targetRotation = rigidbody.velocity.y >= -2f ? new Vector3(0, 0, -30) : new Vector3(0, 0, 30);
+            var rotate = Quaternion.Slerp(transform.rotation, quaternion.Euler(targetRotation), Time.fixedDeltaTime * rotationSpeed);
+            rigidbody.SetRotation(rotate);
         }
     }
 }
