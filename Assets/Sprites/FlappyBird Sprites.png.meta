@@ -398,7 +398,7 @@ TextureImporter:
         height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 26, z: 5, w: 29}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -411,27 +411,6 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: pipe2
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 29
-        width: 26
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4c24c858cf25de4dbad10d384639592
-      internalID: 963394790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pipe3
       rect:
         serializedVersion: 2
         x: 56
@@ -447,27 +426,6 @@ TextureImporter:
       bones: []
       spriteID: 10bd6c7e225f2a649bbe038fef2bd10f
       internalID: 581751788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pipe4
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 29
-        width: 26
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04ae138db27801e44b7a3829d69d2240
-      internalID: -1468048270
       vertices: []
       indices: 
       edges: []
@@ -811,7 +769,6 @@ TextureImporter:
       FlappyBird Sprites_62: 77630400
       FlappyBird Sprites_17: -672663208
       FlappyBird Sprites_27: -1005685712
-      pipe3: 581751788
       FlappyBird Sprites_45: -230125118
       FlappyBird Sprites_61: 1611476030
       silver coin: 2021198452
@@ -833,7 +790,7 @@ TextureImporter:
       play: 1955777218
       FlappyBird Sprites_0: 910380426
       FlappyBird Sprites_16: 708963430
-      pipe2: 963394790
+      pipe2: 581751788
       FlappyBird Sprites_79: -1063188185
       bird1_1: 215550612
       FlappyBird Sprites_66: 234625031

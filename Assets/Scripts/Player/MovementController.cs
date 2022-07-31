@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class PlayerController : MonoBehaviour
+    public class MovementController : MonoBehaviour
     {
         [Header("Managers")]
         [SerializeField]
