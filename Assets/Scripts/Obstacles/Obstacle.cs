@@ -33,7 +33,7 @@ namespace Obstacles
         private void Update()
         {
             if(GameManager.Instance.IsPlayerDead) return;
-            transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
+            transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0, 0));
         }
 
         private void DestroyObstacle()
