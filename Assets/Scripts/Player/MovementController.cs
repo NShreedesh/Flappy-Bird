@@ -82,8 +82,8 @@ namespace Player
 
         private void RotateBird()
         {
-            var targetRotation = rigidbody.velocity.y >= -4f ? new Vector3(0, 0, 20) : new Vector3(0, 0, -20);
-            var rotate = Quaternion.Slerp(transform.rotation, quaternion.Euler(targetRotation), Time.fixedDeltaTime * rotationSpeed);
+            var targetRotation = rigidbody.velocity.y >= -4f ? new Vector3(0, 0, 45) : new Vector3(0, 0, -90);
+            var rotate = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), Time.fixedDeltaTime * rotationSpeed);
             rigidbody.SetRotation(rotate);
         }
     }
