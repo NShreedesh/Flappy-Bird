@@ -787,6 +787,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: medal10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 13
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0e1295f57f7564d90a718a35bd4c48
+      internalID: -5743557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medal20
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 37
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f85c63d7b48a641ba3566a87c6f293
+      internalID: -1322148006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medal30
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 208
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfce1597cede5874eb838e3296688990
+      internalID: 2045744412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -801,6 +864,7 @@ TextureImporter:
       FlappyBird Sprites_80: -1992071063
       menu: 1904332077
       0: 1889012060
+      medal30: 2045744412
       FlappyBird Sprites_13: 1249551226
       bird3_1: 370227038
       FlappyBird Sprites_22: 306673603
@@ -833,13 +897,14 @@ TextureImporter:
       FlappyBird Sprites_19: 679313211
       bird3_2: -1493882850
       bird2_3: 222617849
-      FlappyBird Sprites_70: 696024577
       bird1_2: 1350293158
       FlappyBird Sprites_18: -255149543
       FlappyBird Sprites_34: -1690510212
+      FlappyBird Sprites_70: 696024577
       FlappyBird Sprites_24: 495703595
       bird1_3: 249366913
       FlappyBird Sprites_20: 8651170
+      medal10: -5743557
       FlappyBird Sprites_72: -543845695
       bird2_2: 1660163825
       3: 1882525642
@@ -847,6 +912,7 @@ TextureImporter:
       white: 1595691422
       scoreboard: 26352538
       get ready: 1693437838
+      medal20: -1322148006
       FlappyBird Sprites_17: -672663208
       FlappyBird Sprites_45: -230125118
       silver coin: 2021198452
