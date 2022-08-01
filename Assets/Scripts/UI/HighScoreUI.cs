@@ -8,7 +8,6 @@ namespace UI
         [SerializeField]
         private ScoreUIController scoreUIController;
 
-       
         private void OnEnable()
         {
             ScoreController.OnHighScoreAdded += OnHighScoreChange;
