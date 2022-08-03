@@ -1212,6 +1212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 1495677213}
   scorePanel: {fileID: 1739482582}
+  audioManager: {fileID: 1250559201}
+  clickAudioClip: {fileID: 8300000, guid: d312a5d10e7c4834ba7ea5f3f307de8e, type: 3}
 --- !u!1 &959074436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +1871,18 @@ MonoBehaviour:
       - m_Target: {fileID: 829838062}
         m_TargetAssemblyTypeName: UI.UIController, Assembly-CSharp
         m_MethodName: OnOkButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.ButtonClickAudio, Assembly-CSharp
+        m_MethodName: PlayClickAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
