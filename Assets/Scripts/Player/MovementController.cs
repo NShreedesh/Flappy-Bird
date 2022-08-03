@@ -31,6 +31,12 @@ namespace Player
         [SerializeField]
         private float rotationSpeed = 5;
 
+        [Header("Audio Info")]
+        [SerializeField]
+        private AudioManager audioManager;
+        [SerializeField]
+        private AudioClip jumpAudioClip;
+
         private void Start()
         {
             _canFly = Animator.StringToHash(CanFly);
@@ -66,6 +72,7 @@ namespace Player
             
             rigidbody.velocity = Vector2.zero;
             rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            audioManager.PlaySfxAudio(jumpAudioClip);
             _canJump = false;
         }
 
