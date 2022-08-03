@@ -14,6 +14,12 @@ namespace Score
         public static Action<int> OnScoreAdded;
         public static Action<int> OnHighScoreAdded;
 
+        [Header("Audio")]
+        [SerializeField]
+        private AudioManager audioManager;
+        [SerializeField]
+        private AudioClip pointAudioClip;
+
         private void OnEnable()
         {
             GameManager.OnPlayerDead += SaveHighScore;
@@ -39,6 +45,7 @@ namespace Score
         private void AddScore()
         {
             score += 1;
+            audioManager.PlaySfxAudio(pointAudioClip);
             InvokeAddScore();
         }
 

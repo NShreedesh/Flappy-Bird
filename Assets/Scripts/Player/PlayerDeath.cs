@@ -9,26 +9,22 @@ namespace Player
         [SerializeField]
         private AudioManager audioManager;
         [SerializeField]
-        private AudioClip collisionClip;
-        [SerializeField]
-        private AudioClip deathClip;
+        private AudioClip hitClip;
         
         private void OnCollisionEnter2D(Collision2D col)
         {
-            if (col.gameObject.CompareTag(TagManager.GroundTag))
+            if (GameManager.Instance.IsPlayerDead) return;
+            
+            if (col.gameObject.CompareTag(TagManager.GroundTag) ||
+                col.gameObject.CompareTag(TagManager.ObstacleTag))
             {
-                audioManager.PlaySfxAudio(deathClip);
-                Die();
-            }
-            else if (col.gameObject.CompareTag(TagManager.ObstacleTag))
-            {
-                audioManager.PlaySfxAudio(collisionClip);
                 Die();
             }
         }
 
-        private static void Die()
+        private void Die()
         {
+            audioManager.PlaySfxAudio(hitClip);
             GameManager.Instance.PlayerDead();
         }
     }

@@ -471,7 +471,7 @@ AudioSource:
   m_GameObject: {fileID: 170915457}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8ea7135203470c74180f021572a06785, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2527,6 +2527,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4691233004619207112, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1250559201}
+    - target: {fileID: 4691233004619207112, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
+      propertyPath: pointAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0cb71a3b46a12ce459e33e0f93b0bb26, type: 3}
+    - target: {fileID: 4691233004619207113, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
+      propertyPath: hitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 84569966aaa9e744cbd762320a70c45a, type: 3}
     - target: {fileID: 4691233004619207113, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
       propertyPath: deathClip
       value: 
