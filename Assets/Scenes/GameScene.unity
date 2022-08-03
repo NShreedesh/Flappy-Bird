@@ -1955,17 +1955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d5c61d3c5c4da1a31347accd5733da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberSprites:
-  - {fileID: 1889012060, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -727085393, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 910380426, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 1882525642, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 201544355, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -1558662411, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -1559287476, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -2070436904, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 2006263338, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -736219526, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
+  scoreUIData: {fileID: 11400000, guid: af45f45118361aa47ade5605324ded24, type: 2}
   image1: {fileID: 215968861}
   image2: {fileID: 2137339670}
   image3: {fileID: 488389532}
@@ -2145,17 +2135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d5c61d3c5c4da1a31347accd5733da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberSprites:
-  - {fileID: 1889012060, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -727085393, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 910380426, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 1882525642, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 201544355, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -1558662411, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -1559287476, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -2070436904, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 2006263338, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -736219526, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
+  scoreUIData: {fileID: 11400000, guid: af45f45118361aa47ade5605324ded24, type: 2}
   image1: {fileID: 170445487}
   image2: {fileID: 233299459}
   image3: {fileID: 1323126794}
@@ -2217,17 +2197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d5c61d3c5c4da1a31347accd5733da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberSprites:
-  - {fileID: 1889012060, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -727085393, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 910380426, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 1882525642, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 201544355, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -1558662411, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -1559287476, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -2070436904, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: 2006263338, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
-  - {fileID: -736219526, guid: 4c1f28131177d7344955bedd3ad30f8d, type: 3}
+  scoreUIData: {fileID: 11400000, guid: af45f45118361aa47ade5605324ded24, type: 2}
   image1: {fileID: 959074438}
   image2: {fileID: 975460020}
   image3: {fileID: 73131444}

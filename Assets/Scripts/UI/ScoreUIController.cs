@@ -1,14 +1,15 @@
 ﻿using System;
+using UI.Data;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Score
+namespace UI
 {
     public class ScoreUIController : MonoBehaviour
     {
         [Header("Number Sprites")]
         [SerializeField]
-        private Sprite[] numberSprites;
+        private ScoreUIData scoreUIData;
         
         [Header("Score Images")]
         [SerializeField]
@@ -41,7 +42,7 @@ namespace Score
 
         private void ChangeScoreImage(Image image, int score)
         {
-            image.sprite = numberSprites[score];
+            image.sprite = scoreUIData.numberSprites[score];
         }
     }
 }
