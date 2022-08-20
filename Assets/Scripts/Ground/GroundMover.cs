@@ -23,7 +23,9 @@ namespace Ground
             
             foreach (var ground in grounds)
             {
-                ground.transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0, 0));
+                ground.transform.position = Vector2.MoveTowards(ground.transform.position,
+                    new Vector2(leftGroundChangePosition, transform.position.y),
+                    Time.deltaTime * moveSpeed);
             }
 
             ChangeGroundPosition();

@@ -2488,10 +2488,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 4691233004619207089, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4691233004619207092, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1250559201}
+    - target: {fileID: 4691233004619207094, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4691233004619207095, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
       propertyPath: m_RootOrder
       value: 5

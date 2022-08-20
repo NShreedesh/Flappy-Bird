@@ -108,7 +108,7 @@ MonoBehaviour:
   moveSpeed: 2
   minYPosition: -1
   maxYPosition: 2
-  destroyXPosition: -5
+  destroyXPosition: -10
 --- !u!1 &9031903558012471396
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,13 +33,13 @@ namespace Obstacles
         {
             if(GameManager.Instance.IsPlayerDead) return;
             transform.position = Vector2.MoveTowards(transform.position,
-                new Vector2(destroyXPosition + 1, transform.position.y),
+                new Vector2(destroyXPosition, transform.position.y),
                 Time.deltaTime * moveSpeed);
         }
 
         private void DestroyObstacle()
         {
-            if (transform.position.x < destroyXPosition)
+            if (transform.localPosition.x <= destroyXPosition)
             {
                 Destroy(gameObject);
             }
