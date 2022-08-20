@@ -1,4 +1,3 @@
-using System;
 using Manager;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -33,7 +32,9 @@ namespace Obstacles
         private void Update()
         {
             if(GameManager.Instance.IsPlayerDead) return;
-            transform.Translate(new Vector3(-moveSpeed * Time.deltaTime, 0, 0));
+            transform.position = Vector2.MoveTowards(transform.position,
+                new Vector2(destroyXPosition + 1, transform.position.y),
+                Time.deltaTime * moveSpeed);
         }
 
         private void DestroyObstacle()

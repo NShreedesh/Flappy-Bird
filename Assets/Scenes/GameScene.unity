@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5af983e96662f55469d5dd64d6d59109, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -232,6 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -1015,7 +1016,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1212,8 +1213,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 1495677213}
   scorePanel: {fileID: 1739482582}
-  audioManager: {fileID: 1250559201}
-  clickAudioClip: {fileID: 8300000, guid: d312a5d10e7c4834ba7ea5f3f307de8e, type: 3}
 --- !u!1 &959074436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,10 +2492,6 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1250559201}
-    - target: {fileID: 4691233004619207092, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
-      propertyPath: jumpAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6dda78e2ee0d0fc49b2e1b11ed86ff59, type: 3}
     - target: {fileID: 4691233004619207095, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2545,26 +2540,10 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1250559201}
-    - target: {fileID: 4691233004619207112, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
-      propertyPath: pointAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0cb71a3b46a12ce459e33e0f93b0bb26, type: 3}
-    - target: {fileID: 4691233004619207113, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
-      propertyPath: hitClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 84569966aaa9e744cbd762320a70c45a, type: 3}
-    - target: {fileID: 4691233004619207113, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
-      propertyPath: deathClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6ff94734526680c428a761b2407cc0da, type: 3}
     - target: {fileID: 4691233004619207113, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1250559201}
-    - target: {fileID: 4691233004619207113, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
-      propertyPath: collisionClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 84569966aaa9e744cbd762320a70c45a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3f6a43c361d2da44bad09361be4aee3, type: 3}
 --- !u!1001 &5308456981221073325

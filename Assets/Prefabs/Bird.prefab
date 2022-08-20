@@ -177,6 +177,8 @@ MonoBehaviour:
   inputController: {fileID: 4691233004619207115}
   jumpForce: 6
   rotationSpeed: 8
+  audioManager: {fileID: 0}
+  jumpAudioClip: {fileID: 8300000, guid: 6dda78e2ee0d0fc49b2e1b11ed86ff59, type: 3}
 --- !u!114 &4691233004619207113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3d857f26aec9d49818d83bfeb8a1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  hitClip: {fileID: 8300000, guid: 84569966aaa9e744cbd762320a70c45a, type: 3}
 --- !u!114 &4691233004619207112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +206,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  audioManager: {fileID: 0}
+  pointAudioClip: {fileID: 8300000, guid: 0cb71a3b46a12ce459e33e0f93b0bb26, type: 3}

@@ -11,7 +11,7 @@ namespace Manager
         {
             get
             {
-                if (_instance == null)
+                if (_instance.Equals(null))
                 {
                     Debug.Log("Null GameManager Found...");
                 }
