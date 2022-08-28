@@ -27,7 +27,7 @@ namespace Obstacles
         private void Update()
         {
             if(GameManager.Instance.IsPlayerDead) return;
-            transform.position += Vector3.left * (moveSpeed * Time.deltaTime);
+            transform.position += Vector3.left * (moveSpeed * Time.smoothDeltaTime);
             
             if (transform.localPosition.x <= destroyXPosition)
             {
