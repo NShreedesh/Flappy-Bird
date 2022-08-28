@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -68,7 +68,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 512
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 0
     compressionQuality: 58
     crunchedCompression: 0
@@ -897,10 +897,10 @@ TextureImporter:
       FlappyBird Sprites_19: 679313211
       bird3_2: -1493882850
       bird2_3: 222617849
-      FlappyBird Sprites_70: 696024577
-      bird1_2: 1350293158
       FlappyBird Sprites_18: -255149543
       FlappyBird Sprites_34: -1690510212
+      FlappyBird Sprites_70: 696024577
+      bird1_2: 1350293158
       FlappyBird Sprites_24: 495703595
       bird1_3: 249366913
       FlappyBird Sprites_20: 8651170

@@ -8,7 +8,7 @@ namespace Obstacles
     {
         [Header("Movement Values")]
         [SerializeField]
-        private float moveSpeed;
+        private float moveSpeed = 2;
 
         [Header("Position Values")]
         [SerializeField]
@@ -19,11 +19,6 @@ namespace Obstacles
         [SerializeField]
         private float destroyXPosition = -5f;
 
-        private void OnEnable()
-        {
-            InvokeRepeating(nameof(DestroyObstacle), 5, 1);
-        }
-
         private void OnDisable()
         {
             CancelInvoke();
@@ -32,13 +27,8 @@ namespace Obstacles
         private void Update()
         {
             if(GameManager.Instance.IsPlayerDead) return;
-            transform.position = Vector2.MoveTowards(transform.position,
-                new Vector2(destroyXPosition, transform.position.y),
-                Time.deltaTime * moveSpeed);
-        }
-
-        private void DestroyObstacle()
-        {
+            transform.position += Vector3.left * (moveSpeed * Time.deltaTime);
+            
             if (transform.localPosition.x <= destroyXPosition)
             {
                 Destroy(gameObject);
